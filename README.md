@@ -97,3 +97,19 @@ git rm --cached <file> 把文件从暂存区删除，但保留在当前工作区
 
 SSH以[非对称加密](https://zh.wikipedia.org/wiki/非对称加密)实现[身份验证](https://zh.wikipedia.org/wiki/身份验证)[[2\]](https://zh.wikipedia.org/zh-cn/Secure_Shell#cite_note-rfc4252-2)。身份验证有多种途径，例如其中一种方法是使用自动生成的公钥-私钥对来简单地加密网络连接，随后使用密码认证进行登录；
 
+~~~
+git clone repo-address  //克隆仓库
+git push <remote><branch> //推送更新内容
+git pull <remote> //拉取更新内容
+~~~
+
+## 关联本地仓库和远程仓库
+
+~~~
+git remote add<远程仓库别名><远程仓库地址>//添加远程仓库
+git branch -M main //指定分支的名称为main
+git push -u <远程仓库别名><远程分支名>：<本地分支名>
+git remote -v //查看远程仓库
+git pull<远程仓库名><远程分支名>：<本地分支名> //拉取远程仓库内容
+~~~
+
