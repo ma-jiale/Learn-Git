@@ -38,7 +38,8 @@ git clone <url>
 
 ~~~
 git status //查看仓库状态
-git add //添加到暂存区
+git add //添加文件（夹）到暂存区
+git add '带空格的文件（夹）名'//添加带空格的文件（夹）到暂存区
 git add. //可以提交当前文件夹
 git commit -m "" //提交，只提交暂存区内容，不会提交工作区内容
 git log //查看仓库提交记录
